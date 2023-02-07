@@ -9,8 +9,8 @@ import { XAxis, YAxis, AreaChart, Area } from 'recharts';
                 <AreaChart width={200} height={50} data={data}>
                     <defs className=''>
                         <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                        <stop  offset="1%" stopColor={pricesData ? "#17ff00": "#ff0000"} stopOpacity={0.8}/>
-                        <stop  offset="100%" stopColor={pricesData ? "#17ff00": "#ff0000"} stopOpacity={0}/>
+                        <stop  offset="1%" stopColor="#000" stopOpacity={0.8}/>
+                        <stop  offset="100%" stopColor="#000" stopOpacity={0}/>
                         </linearGradient>
                     </defs>
                     <Area className="cursor-pointer " fill="url(#colorUv)" dot={false} type="category" dataKey="prices" stroke="#000" strokeWidth={"1px"} />

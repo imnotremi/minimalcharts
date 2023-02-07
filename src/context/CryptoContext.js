@@ -23,16 +23,16 @@ export const CryptoProvider = ({ children }) => {
     setCryptoData();
     setLoading(true);
 
-    //     try {
-    //       const data = await fetch(
-    //         `https://api.coingecko.com/api/v3/coins/list`
-    //       )
-    //         .then((res) => res.json())
-    //         .then((json) => json);
-    // console.log(data);
-    //     } catch (error) {
-    //       console.log(error);
-    //     }
+        try {
+          const data = await fetch(
+            `https://api.coingecko.com/api/v3/coins/list`
+          )
+            .then((res) => res.json())
+            .then((json) => json);
+    console.log(data);
+        } catch (error) {
+          console.log(error);
+        }
 
     try {
       const data = await fetch(
