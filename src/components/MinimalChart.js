@@ -5,7 +5,7 @@ import { XAxis, YAxis, AreaChart, Area } from 'recharts';
     const ChartComponentM = ({data, pricesData}) => {
         console.log("Price data", pricesData)
         return (
-            <div className='xl:mx-[20%]  mx-[0%]'>
+            <div className='xl:mx-[20%] mx-[0%]'>
                 <AreaChart width={200} height={50} data={data}>
                     <defs className=''>
                         <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">

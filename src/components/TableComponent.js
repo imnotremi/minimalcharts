@@ -61,14 +61,14 @@ const TableComponent = () => {
 
   return (
     <>
-      <div className="shadow-2xl p-2 rounded-2xl flex flex-col mt-9 ">
+      <div className="shadow-2xl p-2 rounded-2xl flex flex-col mt-9">
         {cryptoData ? (
           <table className="w-full mt-3 table-auto">
             <thead className="text-black capitalize text-base font-medium border-b border-gray-100 ">
               <tr className="">
                 <th className="py-1 ">asset</th>
                 <th className="py-1 sm:table-cell hidden">name</th>
-                <th className="py-1 ">Charts</th>
+                <th className="py-1 md:table-cell hidden">Charts</th>
                 <th className="py-1">price</th>
                 {/* <th className="py-1 md:table-cell hidden">total volume</th> */}
                 <th className="py-1 md:table-cell hidden">market cap change</th>
@@ -107,7 +107,7 @@ const TableComponent = () => {
                           {data.name}
                         </Link>
                       </td>
-                      <td className="">
+                      <td className="md:table-cell hidden">
                         <Link to={`/${data.id}`}>
                           <MinimalChart id={data.id}/>
                         </Link>
@@ -204,7 +204,7 @@ const TableComponent = () => {
             CoinGecko
           </a>
         </span>
-<div className="mt-10">
+<div className="sm:mt-20 mt-5">
         <Pagination />
         </div>
       </div>
