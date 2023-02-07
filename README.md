@@ -39,3 +39,4 @@ https://youtu.be/JPlVb3t6kx8 <br />
 
 
 
+# minimalcharts
